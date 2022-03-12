@@ -1,0 +1,16 @@
+{% layout "layout.liquid" %} 
+{% block content %}
+<h1 class="display-4">Welcome To The Weather App</h1>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="form-group col-md-4 col-md-offset-5 align-center ">
+             <form class="form-inline" id="form" action="">
+                <input type="search" class="form-control rounded" placeholder="Enter Zip Code" aria-label="Search" aria-describedby="search-addon" />
+                <button type="button" class="btn btn-outline-primary">Search</button>
+             </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

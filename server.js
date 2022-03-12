@@ -4,6 +4,8 @@
 // Environment variables and Express
 require('dotenv').config()
 const express = require('express')
+
+const HomeRouter = require('./controllers/home')
 const middleware = require('./utils/middleware')
 
 
@@ -21,6 +23,7 @@ middleware(app)
 // Routes
 ////////////////////////////////////////////
 // register our routes here
+app.use('/', HomeRouter)
 
 
 ////////////////////////////////////////////
