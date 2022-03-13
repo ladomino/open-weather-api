@@ -18,13 +18,24 @@
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-7 col-xl-5">
   
-          <div id="wrapper-bg" class="card text-primary shadow-4-strong">
+          <div id="wrapper-bg" class="card text-dark shadow-4-strong">
             <!-- Main current data -->
             <div class="card-header p-4 border-0">
               <div class="text-center mb-3">
                 <p class="h2 mb-1" id="wrapper-name">{{city}}</p>
                 <p class="mb-1" id="wrapper-description">{{description}}</p>
-                <p class="display-1 mb-1" id="wrapper-temp">{{cityTemp}}</p>
+                <p class="display-1 mb-1" id="wrapper-temp">
+                {% assign cTemp = cityTemp | integer %}
+                {% if cTemp < 40 %}
+                    <span style="color: blue">{{cityTemp}}</span>
+                {% else %}
+                  {% if cTemp > 90 %}
+                    <span style="color: red">{{cityTemp}}</span>
+                  {% else %}
+                    {{cityTemp}}
+                  {% endif %}
+                {% endif %}
+                </p>
                 <span class="">Minimum: {{minTemp}}<span id="wrapper-pressure"></span></span>
                 <span class="mx-2">|</span>
                 <span class="">Maximum: {{maxTemp}}<span id="wrapper-humidity"></span></span>
