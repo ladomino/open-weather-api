@@ -6,6 +6,7 @@ require('dotenv').config()
 const express = require('express')
 
 const HomeRouter = require('./controllers/home')
+const WeatherRouter = require('./controllers/weather')
 const middleware = require('./utils/middleware')
 
 
@@ -24,6 +25,7 @@ middleware(app)
 ////////////////////////////////////////////
 // register our routes here
 app.use('/', HomeRouter)
+app.use('/weather', WeatherRouter)
 
 
 ////////////////////////////////////////////

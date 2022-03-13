@@ -5,10 +5,13 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="form-group col-md-4 col-md-offset-5 align-center ">
-             <form class="form-inline" id="form" action="">
-                <input type="search" class="form-control rounded" placeholder="Enter Zip Code" aria-label="Search" aria-describedby="search-addon" />
-                <button type="button" class="btn btn-outline-primary">Search</button>
-             </form>
+            <form id="form" action="/weather">
+                <input type="text" id="zipcode" class="form-control rounded" name="zipcode" placeholder="Enter Zip Code" aria-label="Search" aria-describedby="search-addon" />
+                <!-- <a href="/weather" class="btn btn-info">
+                    Search -->
+                <input type="submit"  class="btn btn-outline-primary" value="Search" />
+                <!-- </a> -->
+            </form>
         </div>
     </div>
 </div>
