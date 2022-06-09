@@ -1,10 +1,10 @@
-![ui](https://media.git.generalassemb.ly/user/6387/files/ac9a086c-9fd8-11e8-9e0d-52091e56436b)
 
-# Build a Weather App
+# MY Build a Weather App
 
-Here are working versions of the app:
-- [Max](https://codepen.io/jkeohan/live/yjMKqE)
-- [Aemero](https://codepen.io/jkeohan/live/ELWELM)
+![WeatherSearch](assets/weathersearch.png)
+
+
+![Weather](assets/weather.png)
 
 ## Setting up
 
